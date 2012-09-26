@@ -32,14 +32,17 @@
       - Only files that a required for a first run offline are required.
         - If a widget requires a network connection, only include the assets required to tell the user they need a connection.
       - Assets not included will be cached on demand.
-   -->
+  -->
   <resources>
     <resource name='index.html' />
     <resource name='settings.html' />
+    <resource name='js/underscore-min.js' />
+    <resource name='js/ICanHaz.js' />
     <resource name='js/gecko.js' />
     <resource name='js/index.main.js' />
     <resource name='js/settings.main.js' />
     <resource name='css/widget.css' />
+    <resource name='css/settings.css' />
     <resource name='images/icon.png' />
   </resources>
 </manifest>

@@ -1,10 +1,10 @@
-$(document).ready(function() {
+$(function() {
   
   chameleon.widget({  
     
     //Triggered every time the widget loads.
     onLoad: function() {
-      $("#chameleon-widget").html("This is a template for building widgets.");
+      $('#chameleon-widget').html('This is a template for building widgets.');
     },
     
     //Triggered the first time the widget is created.
@@ -56,7 +56,7 @@ $(document).ready(function() {
     //Triggered when the user taps the configure button in the widget title bar.
     onConfigure: function() {
       if (chameleon.connected()) {
-        chameleon.promptHTML({url:"settings.html"});
+        chameleon.promptHTML({ url:'settings.html' });
       }
     },
     
@@ -75,7 +75,7 @@ $(document).ready(function() {
     
     //Triggered every time the widget loads, but not in Chameleon.        
     notChameleon: function() {
-      $("#chameleon-widget").html("This is a template for building widgets");  
+      $('#chameleon-widget').html('This is a template for building widgets');  
     },
     
   });

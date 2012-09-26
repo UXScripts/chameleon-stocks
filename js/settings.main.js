@@ -1,7 +1,12 @@
-$(document).ready(function() {
+$(function() {
+
+  $("#save-button").click(function(e) {
+    chameleon.close(true); 
+    return false;
+  });
   
-  $("#close-button").click(function(e) {
-    chameleon.close(true);
+  $("#cancel-button").click(function(e) {
+    chameleon.close(false);
     return false;
   });
 
